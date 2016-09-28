@@ -12,10 +12,14 @@ from arithmetic import *
 while True:
 	input_string = raw_input()
 	tokens = input_string.split(" ")
+
+	# Filling the token list to length 3, so we do not get an 'index out of range' 
+	# error if we call a function with just one argument or are trying to exit the calculator
 	while len(tokens) < 3:
 		tokens.append(0)
 	num1 = int(tokens[1])
 	num2 = int(tokens[2])
+	
 	if tokens[0] == "q":
 		break
 	elif tokens[0] == "+":
