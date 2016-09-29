@@ -19,7 +19,7 @@ while True:
 		tokens.append(0)
 	num1 = int(tokens[1])
 	num2 = int(tokens[2])
-	
+
 	if tokens[0] == "q":
 		break
 	elif tokens[0] == "+":
