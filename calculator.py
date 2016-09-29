@@ -15,8 +15,8 @@ while True:
 
 	# Filling the token list to length 3, so we do not get an 'index out of range' 
 	# error if we call a function with just one argument or are trying to exit the calculator
-	while len(tokens) < 3:
-		tokens.append(0)
+	#while len(tokens) < 3:
+	#	tokens.append(0)
 	num1 = int(tokens[1])
 	num2 = int(tokens[2])
 
@@ -36,7 +36,7 @@ while True:
 		print cube(num1)
 	elif tokens[0] == "pow":
 		print power(num1, num2)
-	elif tokens[0] == "mod":
+	elif tokens[0] == "mod": 
 		print mod(num1, num2)
 	else:
 		print "Sorry this is not a valid command."
